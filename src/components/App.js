@@ -3,7 +3,7 @@ import '../styles/App.css';
 import { useState, useEffect } from 'react';
 
 const App = () => {
-  const [date, setDate] = useState(new Date());
+  const [date, setDate] = useState(new Date("12/17/2021, 6:24:00 PM"));
   function refreshClock() {
     setDate(new Date());
   }
@@ -16,7 +16,7 @@ const App = () => {
   return (
     <div id="main">
       <div className="date-time">
-      {date.toLocaleString()}
+      {date.toLocaleTimeString()}
       </div>
     </div>
   )
